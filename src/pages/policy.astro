@@ -1,0 +1,181 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="Politique de confidencialité | Kyle AH-LO" description="A propos Kyle AH-LO">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero title="Politique de confidentialité">
+			Dernière mise à jour : 17 mai 2025<br/>
+			La présente Politique de confidentialité décrit comment nous recueillons, 
+			utilisons et protégeons les données personnelles traitées via notre application WhatsApp 
+			connectée à notre système d'automatisation via n8n.
+			</Hero>
+
+			<section>
+				<h2 class="section-title">1. Responsable du traitement</h2>
+				<div class="content">
+					<p>
+					L'application est éditée par :
+						Le développeur Kyle AH-LO<br/>
+						Adresse : 6b rue de l'hôpital, Saint-bonnet-en-champsaur, 05500<br/>
+						SIRET : 88285844200024<br/>
+						E-mail : kyleahlo.bts@gmail.com<br/>
+						</p><br/>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">2. Données collectées</h2>
+				<div class="content">
+					Dans le cadre de l’utilisation de notre application WhatsApp, nous pouvons collecter les données suivantes :
+					<ul>
+					<li>Numéro de téléphone WhatsApp</li>
+					<li>Contenu des messages envoyés ou reçus</li>
+					<li>Données techniques (heure d’envoi, identifiant du message, statut de livraison)</li>
+					<li>Informations transmises volontairement par l'utilisateur via les messages (nom, email, etc.)</li>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">3. Finalités du traitement</h2>
+				<div class="content">
+					Les données collectées sont traitées uniquement pour les finalités suivantes :
+					<ul>
+					<li>Répondre automatiquement ou manuellement à des demandes reçues sur WhatsApp</li>
+					<li>Déclencher des automatisations via le logiciel n8n (par exemple, création de tickets, réponses personnalisées, notifications)</li>
+					<li>Améliorer notre service (statistiques d’usage anonymisées)</li>
+					<li>Assurer le suivi des interactions et maintenir un historique de conversations (le cas échéant)</li>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">4. Base légale du traitement</h2>
+				<div class="content">
+					Le traitement est fondé sur :
+					<ul>
+					<li>Votre consentement explicite lors de l’utilisation de notre application WhatsApp</li>
+					<li>Notre intérêt légitime à automatiser certaines tâches pour améliorer la qualité du service</li>
+					<li>Le respect d’obligations légales, si applicable.</li>
+					</div>
+			</section>
+			<section>
+				<h2 class="section-title">5. Partage des données</h2>
+				<div class="content">
+					Les données peuvent être traitées par des outils tiers strictement nécessaires au fonctionnement de notre service :
+					<ul>
+					<li>n8n : logiciel d’automatisation auto-hébergé ou en cloud (données traitées de façon sécurisée)</li>
+					<li>WhatsApp Business API : plateforme de messagerie (propriété de Meta Platforms, Inc.)</li>
+					Nous ne vendons ni ne louons vos données à des tiers.	
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">6. Durée de conservation</h2>
+				<div class="content">
+					Les données échangées sont conservées uniquement le temps nécessaire à la réalisation des finalités. 
+					Les conversations peuvent être archivées à des fins de suivi pendant une durée maximale de [ex. : 6 mois], 
+					sauf obligation légale contraire.
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">7. Sécurité</h2>
+				<div class="content">
+					Nous mettons en œuvre toutes les mesures techniques et organisationnelles raisonnables pour sécuriser les données :
+					<ul>
+					<li>Hébergement sécurisé</li>
+					<li>Connexions chiffrées (HTTPS, TLS)</li>
+					<li>Journalisation et contrôle des accès à n8n</li>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">8. Vos droits</h2>
+				<div class="content">
+						Conformément à la réglementation en vigueur (notamment le RGPD), vous disposez des droits suivants :
+						<ul>
+						<li>Droit d’accès à vos données</li>
+						<li>Droit de rectification</li>
+						<li>Droit à l’effacement (droit à l’oubli)</li>
+						<li>Droit d’opposition</li>
+						<li>Droit à la limitation du traitement</li>
+						Pour exercer vos droits, contactez-nous à l’adresse suivante : kyleahlo.bts@gmail.com
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">9. Modification de la politique</h2>
+				<div class="content">
+				Nous nous réservons le droit de modifier cette politique à tout moment. 
+				En cas de changement important, nous en informerons les utilisateurs via WhatsApp ou notre site internet.
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">10. Contact</h2>
+				<div class="content">
+					Pour toute question relative à cette politique de confidentialité :<br/>
+					Kyle AH-LO<br/>
+					E-mail : kyleahlo.bts@gmail.com<br/>
+					Adresse : 6B rue de l'hôpital, Saint-bonnet-en-champsaur, 05500<br/>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
